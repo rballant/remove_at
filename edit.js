@@ -5,12 +5,12 @@ function find_comments(){
 	const list = comments.getElementsByTagName("ytd-comment-thread-renderer");
 	for (var i=0, item; item = list.item(i); i++) {	
 		const author_text = item.querySelector("#author-text");
-		//console.log(author_text);
-		let str = author_text.firstElementChild.innerHTML;
+		//console.log(author_text.firstElementChild.innerText);
+		let str = author_text.firstElementChild.innerText;
 		while (str.charAt(0) == "@" | str.charCodeAt(0) <= 32){
 			str = str.substring(1);
 		}
-		author_text.firstElementChild.innerHTML = str;
+		author_text.firstElementChild.innerText = str;
 		//console.log(str)
 		//console.log(str.charCodeAt(0));
 	}
