@@ -1,0 +1,7 @@
+{
+	"manifest_version": 2,
+	"name": "remove_at",
+	"version": "0.0",
+
+	"description": "remove @ from youtube handle"
+}
