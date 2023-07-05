@@ -3,5 +3,16 @@
 	"name": "remove_at",
 	"version": "0.0",
 
-	"description": "remove @ from youtube handle"
+	"description": "remove @ from youtube handle",
+
+	"icons": {
+		"48": "icons/red_cross.png"
+		},
+	
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["edit.js"]
+		}
+	]
 }
